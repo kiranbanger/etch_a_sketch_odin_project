@@ -1,11 +1,15 @@
 function createGrid(size=16){
+  if(size == 0){size = 16};
+  if(size>100){size = 100};	
+	
+  let container = document.querySelector('.container');
+  container.style.gridTemplateColumns = `repeat(${size},1fr)`;
+  
   let i = 0;
   while(i < (size**2)){
     let div = document.createElement('div');
-    div.textContent = `Div ${i}`;
     div.className = 'grid';
   
-    let container = document.querySelector('.container');
     container.append(div);
     i++
   }

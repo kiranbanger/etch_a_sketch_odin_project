@@ -1,11 +1,8 @@
 .container {
-  max-height: 100%;
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
 }
 
 div{
-  border: solid green 1px;	
   aspect-ratio: 1/1;
 }
 
